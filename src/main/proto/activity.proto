@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.hk.activity.proto";
+option java_outer_classname = "ActivityProto";
+option objc_class_prefix = "ACTIVITY_PROTO";
+
+package activity;
+
+// The greeting service definition.
+//service Greeter {
+  // Sends a greeting
+//  rpc SayHello (HelloRequest) returns (HelloReply) {}
+//}
+
+// The request message containing the user's name.
+message ActivityReq {
+  uint64 id = 1;
+  string name = 2;
+  repeated double amount = 3;
+}
+
+// The response message containing the greetings
+message ActivityRes {
+  uint64 id = 1;
+  string description = 2;
+}
+
+enum ProtoCode {
+  NONE = 0;
+  FIRST_PAGE_REQ = 0x3fffff00;
+  FIRST_PAGE_RES = 0x7fffff00;
+  REWARD_REQ = 0x3fffff01;
+  REWARD_RES = 0x7fffff01;
+  BUY_REQ = 0x3fffff02;
+  BUY_RES = 0x7fffff02;
+}
