@@ -1,3 +1,5 @@
+// D:\tools\jdk-19\bin\java -cp "bin;fat" io.vertx.core.Launcher run com.hk.activity.MainVerticle
+
 import com.google.protobuf.gradle.*
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import org.gradle.api.tasks.testing.logging.TestLogEvent.*
@@ -103,7 +105,6 @@ compileKotlin.kotlinOptions.jvmTarget = "18"
 //tasks.withType<JavaCompile> {
 //  options.encoding = "UTF-8"
 //}
-
 
 tasks.jar {
   manifest {
