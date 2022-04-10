@@ -105,6 +105,12 @@ compileKotlin.kotlinOptions.jvmTarget = "18"
 //}
 
 
+tasks.jar {
+  manifest {
+    attributes(mapOf("Main-Class" to launcherClassName))
+  }
+}
+
 tasks.withType<ShadowJar> {
   archiveClassifier.set("fat")
   manifest {
