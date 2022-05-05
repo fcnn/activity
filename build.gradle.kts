@@ -9,7 +9,7 @@ buildscript {
   extra.apply {
     set("grpcVersion", "+")
     set("protobufVersion", "+")
-    set("kotlinVersion", "1.6.20")
+    set("kotlinVersion", "1.6.21")
     set("protocVersion", "+")
     set("protobufPluginVersion", "0.8.18")
   }
