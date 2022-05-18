@@ -64,7 +64,7 @@ application {
 dependencies {
   //implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:${property("kotlinVersion")}")
   implementation("javax.annotation:javax.annotation-api:1.3.2")
-  implementation("com.google.protobuf:protobuf-java:3.20.1")
+  implementation("com.google.protobuf:protobuf-java:3.21.0-rc-1")
   //implementation("io.grpc:grpc-netty:${property("grpcVersion")}")
   //implementation("io.grpc:grpc-protobuf:${property("grpcVersion")}")
   //implementation("io.grpc:grpc-stub:${property("grpcVersion")}")
