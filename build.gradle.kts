@@ -49,7 +49,7 @@ repositories {
 }
 
 val vertxVersion = "4.3.1-SNAPSHOT"
-val junitJupiterVersion = "5.8.2"
+val junitJupiterVersion = "5.9.0-M1"
 
 val mainVerticleName = "com.hk.activity.MainVerticle"
 val launcherClassName = "io.vertx.core.Launcher"

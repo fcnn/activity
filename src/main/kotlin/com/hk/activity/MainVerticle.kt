@@ -30,11 +30,13 @@ class MainVerticle : AbstractVerticle() {
   private fun initClients(promise: Promise<Void>) {
     val options = WebSocketConnectOptions()
     //options.setPort(443).host = "socketsbay.com"
-    options.setPort(5678).host = "192.168.0.221"
-    options.isSsl = false
+    //options.setPort(5678).host = "192.168.0.221"
+    options.setPort(443).host = "demo.piesocket.com"
+    options.isSsl = true
     options.allowOriginHeader = true
     //options.uri = "wss://socketsbay.com/wss/v2/2/demo/"
-    options.uri = "/"
+    //options.uri = "/"
+    options.uri = "wss://demo.piesocket.com/v3/channel_1?api_key=VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV&notify_self"
     options.version = WebsocketVersion.V13
     //options.addHeader("Sec-WebSocket-Key","dGhlIHNhbXBsZSBub25jZQ==")
 
