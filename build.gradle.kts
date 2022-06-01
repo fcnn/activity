@@ -48,7 +48,7 @@ repositories {
   mavenCentral()
 }
 
-val vertxVersion = "4.3.1-SNAPSHOT"
+val vertxVersion = "4.3.2-SNAPSHOT"
 val junitJupiterVersion = "5.9.0-M1"
 
 val mainVerticleName = "com.hk.activity.MainVerticle"
