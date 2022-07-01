@@ -9,7 +9,7 @@ buildscript {
   extra.apply {
     set("grpcVersion", "+")
     set("protobufVersion", "+")
-    set("kotlinVersion", "1.7.0-RC2")
+    set("kotlinVersion", "1.7.0")
     set("protocVersion", "+")
     set("protobufPluginVersion", "0.8.18")
   }
@@ -135,6 +135,6 @@ tasks.withType<JavaExec> {
 }
 
 tasks.wrapper {
-  gradleVersion = "7.5-rc-2"
+  gradleVersion = "7.5-rc-3"
   distributionType = Wrapper.DistributionType.ALL
 }
