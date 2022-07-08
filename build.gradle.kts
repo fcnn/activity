@@ -48,7 +48,7 @@ repositories {
   mavenCentral()
 }
 
-val vertxVersion = "4.3.2-SNAPSHOT"
+val vertxVersion = "4.3.3-SNAPSHOT"
 val junitJupiterVersion = "5.9.0-M1"
 
 val mainVerticleName = "com.hk.activity.MainVerticle"
@@ -135,6 +135,6 @@ tasks.withType<JavaExec> {
 }
 
 tasks.wrapper {
-  gradleVersion = "7.5-rc-3"
+  gradleVersion = "7.5-rc-4"
   distributionType = Wrapper.DistributionType.ALL
 }
