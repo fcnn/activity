@@ -9,7 +9,7 @@ buildscript {
   extra.apply {
     set("grpcVersion", "+")
     set("protobufVersion", "+")
-    set("kotlinVersion", "1.7.10")
+    set("kotlinVersion", "1.7.20-RC")
     set("protocVersion", "+")
     set("protobufPluginVersion", "0.8.19")
   }
@@ -32,7 +32,7 @@ plugins {
   kotlin("jvm") version("${property("kotlinVersion")}")
   application
   id("com.github.johnrengelman.shadow") version "7.1.2"
-  id("io.spring.dependency-management") version("1.0.12.RELEASE")
+  id("io.spring.dependency-management") version("1.0.13.RELEASE")
 }
 
 group = "com.hk"
@@ -48,7 +48,7 @@ repositories {
   mavenCentral()
 }
 
-val vertxVersion = "4.3.3-SNAPSHOT"
+val vertxVersion = "4.3.4-SNAPSHOT"
 val junitJupiterVersion = "5.9.0-RC1"
 
 val mainVerticleName = "com.hk.activity.MainVerticle"
@@ -135,6 +135,6 @@ tasks.withType<JavaExec> {
 }
 
 tasks.wrapper {
-  gradleVersion = "7.5"
+  gradleVersion = "7.5.1"
   distributionType = Wrapper.DistributionType.ALL
 }
