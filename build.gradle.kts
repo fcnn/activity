@@ -32,7 +32,7 @@ plugins {
   kotlin("jvm") version("${property("kotlinVersion")}")
   application
   id("com.github.johnrengelman.shadow") version "7.1.2"
-  id("io.spring.dependency-management") version("1.0.13.RELEASE")
+  id("io.spring.dependency-management") version("1.0.14.RELEASE")
 }
 
 group = "com.hk"
