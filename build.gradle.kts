@@ -9,7 +9,7 @@ buildscript {
   extra.apply {
     set("grpcVersion", "+")
     set("protobufVersion", "+")
-    set("kotlinVersion", "1.7.20-RC")
+    set("kotlinVersion", "1.7.20")
     set("protocVersion", "+")
     set("protobufPluginVersion", "0.8.19")
   }
@@ -48,7 +48,7 @@ repositories {
   mavenCentral()
 }
 
-val vertxVersion = "4.3.4-SNAPSHOT"
+val vertxVersion = "4.3.5-SNAPSHOT"
 val junitJupiterVersion = "5.9.0-RC1"
 
 val mainVerticleName = "com.hk.activity.MainVerticle"
@@ -135,6 +135,6 @@ tasks.withType<JavaExec> {
 }
 
 tasks.wrapper {
-  gradleVersion = "7.5.1"
+  gradleVersion = "8.0-milestone-2"
   distributionType = Wrapper.DistributionType.ALL
 }
