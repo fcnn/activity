@@ -11,7 +11,7 @@ buildscript {
     set("protobufVersion", "+")
     set("kotlinVersion", "1.7.20")
     set("protocVersion", "+")
-    set("protobufPluginVersion", "0.8.19")
+    set("protobufPluginVersion", "0.9.1")
   }
 
   repositories {
@@ -32,7 +32,7 @@ plugins {
   kotlin("jvm") version("${property("kotlinVersion")}")
   application
   id("com.github.johnrengelman.shadow") version "7.1.2"
-  id("io.spring.dependency-management") version("1.0.14.RELEASE")
+  id("io.spring.dependency-management") version("1.1.0")
 }
 
 group = "com.hk"
@@ -49,7 +49,7 @@ repositories {
 }
 
 val vertxVersion = "4.3.5-SNAPSHOT"
-val junitJupiterVersion = "5.9.0-RC1"
+val junitJupiterVersion = "5.9.1"
 
 val mainVerticleName = "com.hk.activity.MainVerticle"
 val launcherClassName = "io.vertx.core.Launcher"
