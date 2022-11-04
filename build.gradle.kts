@@ -135,6 +135,6 @@ tasks.withType<JavaExec> {
 }
 
 tasks.wrapper {
-  gradleVersion = "8.0-milestone-2"
+  gradleVersion = "8.0-milestone-3"
   distributionType = Wrapper.DistributionType.ALL
 }
