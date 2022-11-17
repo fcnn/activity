@@ -9,7 +9,7 @@ buildscript {
   extra.apply {
     set("grpcVersion", "+")
     set("protobufVersion", "+")
-    set("kotlinVersion", "1.7.20")
+    set("kotlinVersion", "1.8.0-Beta")
     set("protocVersion", "+")
     set("protobufPluginVersion", "0.9.1")
   }
@@ -103,7 +103,7 @@ tasks.processResources  {
 }
 
 val compileKotlin: KotlinCompile by tasks
-compileKotlin.kotlinOptions.jvmTarget = "18"
+compileKotlin.kotlinOptions.jvmTarget = "19"
 
 //tasks.withType<JavaCompile> {
 //  options.encoding = "UTF-8"
